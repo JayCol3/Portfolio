@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>James E. Coleman Jr. — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<nav class="site-nav" id="siteNav">
+  <div class="wrap">
+    <a class="brand" href="#home">JEC<span>_</span>jr</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#github">GitHub</a></li>
+    </ul>
+    <button class="nav-contact-btn" id="openContactBtn" type="button">Contact</button>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <img class="profile-photo" src="assets/profile-photo.png" alt="Portrait of James E. Coleman Jr.">
+      <p class="role">Data &amp; Software Developer</p>
+      <h1>James E. Coleman Jr.</h1>
+      <p class="lede">I turn raw data and rough ideas into working software — full-stack builds, Python analysis, and machine-learning experiments, trained through The Tech Academy's Software Developer Boot Camp.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" id="heroContactBtn" type="button">Get in touch</button>
+        <a class="btn btn-outline" href="#github">View my work</a>
+      </div>
+      <blockquote class="hero-quote">
+        "The computer programmer is a creator of universes for which he alone is the lawgiver."
+        <cite>— Joseph Weizenbaum</cite>
+      </blockquote>
+    </div>
+
+    <div class="hero-chart" aria-hidden="true">
+      <div class="chart-label"><span>model_output.csv</span><span>sentiment_score</span></div>
+      <svg viewBox="0 0 300 160" width="100%">
+        <line x1="0" y1="80" x2="300" y2="80" stroke="#33406A" stroke-width="1"/>
+        <polyline points="0,120 40,100 80,110 120,70 160,85 200,40 240,55 300,20"
+          fill="none" stroke="#E8A33D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="300" cy="20" r="5" fill="#2A9D8F"/>
+        <circle cx="120" cy="70" r="4" fill="#D6604D"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<section id="skills">
+  <div class="wrap">
+    <p class="eyebrow">// core_stack</p>
+    <h2>What I work with</h2>
+    <p style="max-width:60ch;color:var(--text-mute)">A quick tour through the tools I use most — from the front end through the data layer.</p>
+
+    <div class="slideshow">
+      <div class="slide-track" id="slideTrack">
+
+        <article class="slide is-active">
+          <div class="slide-icon" style="background:#2A9D8F">HTML</div>
+          <div>
+            <p class="tag">front end</p>
+            <h3>HTML, CSS &amp; JavaScript</h3>
+            <p>The foundation of every build I ship — semantic markup, responsive layout, and JS that handles the interactive pieces without extra frameworks when they're not needed.</p>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="slide-icon" style="background:#E8A33D">PY</div>
+          <div>
+            <p class="tag">language</p>
+            <h3>Python</h3>
+            <p>My primary language for data work — scripting, cleaning datasets, and building the analysis pipelines behind my capstone project.</p>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="slide-icon" style="background:#D6604D">DS</div>
+          <div>
+            <p class="tag">data science</p>
+            <h3>Data Analysis &amp; NLP</h3>
+            <p>Pandas and Jupyter for exploration, plus natural-language processing for sentiment analysis — pulling a signal out of messy, real-world text data.</p>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="slide-icon" style="background:#14213D">DB</div>
+          <div>
+            <p class="tag">back end</p>
+            <h3>SQL &amp; Databases</h3>
+            <p>Comfortable designing schemas and writing queries to move data reliably between an application and its storage layer.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="slide-controls">
+        <button class="slide-arrow" id="prevSlide" type="button" aria-label="Previous skill">❮</button>
+        <div class="slide-dots" id="slideDots"></div>
+        <button class="slide-arrow" id="nextSlide" type="button" aria-label="Next skill">❯</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section-alt">
+  <div class="wrap">
+    <p class="eyebrow">// who_i_am</p>
+    <h2>About</h2>
+
+    <div class="about-grid">
+      <div>
+        <p>I'm a software developer who loves working through a hard problem until the data — or the code — finally makes sense. I'm a graduate of <a href="https://www.learncodinganywhere.com" target="_blank" rel="noopener">The Tech Academy</a>'s Software Developer Boot Camp, trained across the full stack: HTML, CSS, JavaScript, SQL, Python, and C#/.NET.</p>
+        <p>Lately I've been focused on data science — cleaning and exploring datasets, then applying NLP techniques like sentiment analysis to extract something useful from unstructured text. My capstone project walks through that process end to end, from raw data to a working model.</p>
+        <p>I'm always looking for the next project to dig into. If you've got one, let's talk.</p>
+      </div>
+
+      <ul class="timeline">
+        <li>
+          <p class="t-year">Foundations</p>
+          <h4>HTML, CSS &amp; JavaScript</h4>
+          <p>Built the front-end fundamentals: responsive layout, DOM interaction, and clean, accessible markup.</p>
+        </li>
+        <li>
+          <p class="t-year">Full-Stack Training</p>
+          <h4>The Tech Academy Boot Camp</h4>
+          <p>Software Developer program covering SQL, Python, and C#/.NET, ASP.NET, and MVC.</p>
+        </li>
+        <li>
+          <p class="t-year">Capstone</p>
+          <h4>Data Science Capstone</h4>
+          <p>A multi-part project applying Python and NLP to real text data, including a full sentiment-analysis pipeline.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="github">
+  <div class="wrap">
+    <p class="eyebrow">// repositories</p>
+    <h2>GitHub</h2>
+    <p style="max-width:60ch;color:var(--text-mute)">My coding projects live on GitHub — here's a look at the capstone project driving most of my recent work.</p>
+
+    <div class="project-card">
+      <p class="repo-line">github.com/JayCol3/Data-Science-Capstone</p>
+      <h3>Data Science Capstone</h3>
+      <p>A multi–user-story project applying Python to a real dataset, working from initial exploration through to a sentiment-analysis model — documented and built out notebook by notebook.</p>
+      <ul class="story-list">
+        <li>Initial data exploration and cleaning (User Story 1)</li>
+        <li>Revised analysis and feature work (User Story 2)</li>
+        <li>Extended modeling (User Stories 3 &amp; 4)</li>
+        <li>Sentiment analysis on text data (User Story 5)</li>
+      </ul>
+    </div>
+
+    <div class="github-cta">
+      <a class="btn-dark" href="https://github.com/JayCol3/Data-Science-Capstone" target="_blank" rel="noopener">View the capstone repo</a>
+      <a class="btn-ghost" href="https://github.com/JayCol3" target="_blank" rel="noopener">Visit my GitHub profile</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="year"></span> James E. Coleman Jr. — built with HTML, CSS &amp; JavaScript.</p>
+    <p><a href="mailto:colemanjamie80@gmail.com">colemanjamie80@gmail.com</a> &nbsp;·&nbsp; <a href="tel:19713529900">971-352-9900</a></p>
+  </div>
+</footer>
+
+<div class="modal-backdrop" id="contactModal">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="closeContactBtn" type="button" aria-label="Close">×</button>
+    <h2 id="modalTitle">Contact</h2>
+    <p class="lede">Have a project or opportunity in mind? Send a message, or reach me directly:</p>
+    <p class="direct-contact">
+      <a href="tel:19713529900">971-352-9900</a> &nbsp;·&nbsp;
+      <a href="mailto:colemanjamie80@gmail.com">colemanjamie80@gmail.com</a>
+    </p>
+
+    <form id="contactForm" novalidate>
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <p class="form-status" id="formStatus"></p>
+      <button class="btn btn-primary" type="submit">Send message</button>
+    </form>
+  </div>
+</div>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
